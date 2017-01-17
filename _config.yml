@@ -1,5 +1,5 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 highlighter:      pygments
 
 # Permalinks
@@ -7,7 +7,7 @@ permalink:        pretty
 #relative_permalinks: true
 
 # Setup
-title:            Hyde
+title:            Blog
 tagline:          'theme'
 description:      ''
 url:              http://github.com/vladimirmezera
