@@ -46,7 +46,7 @@ Poté se vám bude automaticky zobrazovat nápověda při zadání `currentModel
 
 
 ### Logování
-Při logování můžete využít Session.Ouput, který vypíše vstup na standartní vstup. Doporučují využívat přímo logování, které je v základní knihovně k dispozici v Enterprise Architectu. Ukázka použití logování je například v mé ukázce skriptu zde..
+Při logování můžete využít `Session.Ouput`, který vypíše vstup na standartní vstup. Doporučují využívat přímo logování, které je v základní knihovně k dispozici v Enterprise Architectu. Ukázka použití logování je například v mé ukázce skriptu zde..
 
 ````javascript
 !INC Local Scripts.EAConstants-JScript
