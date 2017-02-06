@@ -5,6 +5,8 @@ Dnes bych chtěl napsat pár řádků o Enterprise Architectu (Sparx Systems) a 
 
 To co se mí dále líbí je možnost ukládat projekty do databáze (Oracle, MySQL) a sdílet tak projekty napříč firmou bez nutnosti ukládání na sdílený disk. EA lze dnes provozovat jak na OS Windows, tak není problém podle návodu rozchodit EA i v Linuxu. V dnešní době mi nejvíce chybí absence generování automatické dokumentace z projektů, tak abych tuto činnost mohl dát na starost nějakému periodickému scheduleru. Z EA lze generovat HTML dokumentaci, ale absence automatizace je na škodu.
 
+![EA13](/public/ea.png "Enterprise Architect 13")
+
 Mým cílem zde není popisovat EA, ale spíše ukázat možnosti skriptování, které EA nabízí.
 
 Modely v EA můžete vytvářet ručně, můžete je generovat například ze zdrojových kódů nebo pomocí pluginu. Někdy ovšem potřebujete provést úpravy v projektech, které se jednoduše nedají dělat pomocí ručního zásahu, případně potřebujete naimportovat struktury, na které nelze využít standardní nástroje. V tomto případě vám může pomoci skriptování.
