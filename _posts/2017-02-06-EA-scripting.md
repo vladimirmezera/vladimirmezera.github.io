@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Ea scripting"
+date:   2017-02-06
+category: Architecture
+tags: [architecture, ea, enterprisearchitect]
+---
+
 Enteprise Architect skriptování
 =====
 
