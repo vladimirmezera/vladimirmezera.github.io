@@ -2,7 +2,7 @@
 layout: page
 title: Architecture
 ---
-{% for post in site.categories[architecture] %}
+{% for post in site.tags[architecture] %}
     <li>{{ post.title }}</li>
 {% endfor %}
 
