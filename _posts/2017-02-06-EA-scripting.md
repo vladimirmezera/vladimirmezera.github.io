@@ -90,8 +90,9 @@ V případě, že generujete velké množství elementů do diagramu, případn�
 Pro začátek doporučuji použít knihu od Thomas Kiliana „Scripting Enterprise Architect“. Jsou zde vysvětleny základní práce a různými objekty jako Element, Diagram, Connector, konfigurace atributů, vytváření package nebo modelů.
 
 ### Links
-[Ukázkové příklady skriptů](https://github.com/vladimirmezera/ea-scripts/)
-[Odkaz na skripting v EA](http://www.sparxsystems.com/enterprise_architect_user_guide/10/automation_and_scripting/the_scripter_window.html)
-[Enterprise Architect Object model](http://www.sparxsystems.com/enterprise_architect_user_guide/9.3/automation/theautomationinterface.html)
+
+* [Ukázkové příklady skriptů](https://github.com/vladimirmezera/ea-scripts/)
+* [Odkaz na skripting v EA](http://www.sparxsystems.com/enterprise_architect_user_guide/10/automation_and_scripting/the_scripter_window.html)
+* [Enterprise Architect Object model](http://www.sparxsystems.com/enterprise_architect_user_guide/9.3/automation/theautomationinterface.html)
 
 
