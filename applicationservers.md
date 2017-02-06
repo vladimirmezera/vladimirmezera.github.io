@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Applikační servery
+title: Aplikační servery
 ---
 <ul>
 {% for post in site.categories[appservers] %}
