@@ -23,6 +23,14 @@ V případě, že otevřete portlet Scripting, zobrazí se vám základní nabí
 Několik doporučení
 -----
 
+### Udržování skriptů
+Doporučuji skripty udržovat v nějakém verzovacím nástroji. Ideální je znovupoužitelné funkce rozdělit do vlastních knihoven, které si poté můžete načítat do jednotlivých skriptů (DRY - Don't Repeat Yourself). Příklad knihovny, která udržuje konstanty.
+
+````javascript
+!INC Local Scripts.EAConstants-JScript
+
+````
+
 ### Nápověda při vytváření skriptů
 Lze využí oficiální dokumentaci Object modelu Enterprise Architectu. Nicméně tato dokumentace není úplně přehledná a spoustu informací zde není uvedeno, nebo není úplně jasné.
 Při vytváření skriptů je Enterprise architect schopný napovídat, v případě, že ví o jaký objekt se jedná. V případě že chcete vědět jaké funkce můžete zavolat na daném objektu, můžete provést následující operaci.
