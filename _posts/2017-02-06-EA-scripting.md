@@ -2,7 +2,7 @@
 layout: post
 title:  "Ea scripting"
 date:   2017-02-06
-category: Architecture
+category: architecture
 tags: [architecture, ea, enterprisearchitect]
 ---
 
