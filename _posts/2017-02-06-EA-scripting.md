@@ -52,7 +52,9 @@ function main()
 }
 main()
 ````
+
 ### Práce se soubory
+
 Velmi často je potřeba pracovat se soubory (načítat vstupy, případně ukládat výstupy) a poté je možnost využít objekty, kterými Enteprise Architect umožnuje pracovat se soubory.
 
 ````javascript
@@ -85,6 +87,16 @@ main()
 
 ### Automatický layout diagramu
 V případě, že generujete velké množství elementů do diagramu, případně více diagramů, můžete i tyto nad těmito diagramy layoutovat diagram.
+
+````javascript 
+    !INC Local Scripts.EAConstants-JScript
+    .
+    .
+    .
+    .	
+    //Auto layout
+    Repository.GetProjectInterface().LayoutDiagramEx (resultDiagram.DiagramGUID, lsLayoutDirectionRight, 67, 40, 20, true)
+````
 
 ### Elektronická kniha
 Pro začátek doporučuji použít knihu od Thomas Kiliana „Scripting Enterprise Architect“. Jsou zde vysvětleny základní práce a různými objekty jako Element, Diagram, Connector, konfigurace atributů, vytváření package nebo modelů.
