@@ -7,6 +7,10 @@ permalink:        pretty
 #relative_permalinks: true
 
 # Setup
+name: Vladimír Mezera blog
+description: My blog
+url: http://vladimirmezera.github.com
+
 title:            Blog
 tagline:          'theme'
 description:      ''
