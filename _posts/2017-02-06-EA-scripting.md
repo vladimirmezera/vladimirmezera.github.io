@@ -54,6 +54,7 @@ function main()
 }
 main()
 ````
+Volbou úrovně logování (LOGLEVEL_DEBUG, LOGLEVEL_INFO) poté můžete měnit množství událostí, které se budou zobrazovat ve výstupu. 
 
 ### Práce se soubory
 
