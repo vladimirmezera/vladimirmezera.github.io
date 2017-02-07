@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Design
+title: IT
 ---
 <ul>
 {% for post in site.categories.architecture %}
