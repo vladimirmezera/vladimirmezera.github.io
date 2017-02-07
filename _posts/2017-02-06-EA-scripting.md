@@ -45,19 +45,19 @@ První skript v Javascriptu
 
 2. Vytvořte si skupinu například `Test scripts`
 
- ![Create group](/public/ea/group.png "Create group")
+   ![Create group](/public/ea/group.png "Create group")
 
 3. Vytvořte si skript například `hello-world`
 
- ![Create script](/public/ea/new-script.png "Create script")
+   ![Create script](/public/ea/new-script.png "Create script")
 
 4. Do funkce main napište `Session.`. Uvidíte, že se vám objeví nápověda
 
- ![Help](/public/ea/word-listen.png "Help")
+   ![Help](/public/ea/word-listen.png "Help")
 
 5. Dopište funkci Output s textem a spuťte.
 
- ![Run](/public/ea/hello-world.png "Run")
+   ![Run](/public/ea/hello-world.png "Run")
 
 
 Několik doporučení
