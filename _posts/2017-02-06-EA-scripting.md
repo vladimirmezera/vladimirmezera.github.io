@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ea scripting"
+title:  "Enterprise Architect scripting"
 date:   2017-02-06
 category: architecture
 tags: [architecture, ea, enterprisearchitect]
@@ -10,23 +10,55 @@ Enteprise Architect skriptování
 =====
 
 Dnes bych chtěl napsat pár řádků o Enterprise Architectu (Sparx Systems) a jeho možnostech skriptování. Tento nástroj je všude velmi rozšířený, protože umožnuje udržovat kompletní dokumentaci o vývoji.  Pro vytváření lze využít standardní UML diagramy, ale lze využít i jiné modely například pro business procesy  BPMN diagramy. V nových verzí EA je již integrována možnost vytvářet i grafické návrhy obrazovek, takže lze kompletní dokumentaci k projektu udržet na jednom místě.
-![BPMN diagram](/public/bpmn.png "BPMN diagram")
+![BPMN diagram](/public/ea/bpmn.png "BPMN diagram")
 
 To co se mí dále líbí je možnost ukládat projekty do databáze (Oracle, MySQL) a sdílet tak projekty napříč firmou bez nutnosti ukládání na sdílený disk. EA lze dnes provozovat jak na OS Windows, tak není problém podle návodu rozchodit EA i v Linuxu. V dnešní době mi nejvíce chybí absence generování automatické dokumentace z projektů, tak abych tuto činnost mohl dát na starost nějakému periodickému scheduleru. Z EA lze generovat HTML dokumentaci, ale absence automatizace je na škodu.
 
-![EA13](/public/ea.png "Enterprise Architect 13")
+![EA13](/public/ea/ea.png "Enterprise Architect 13")
 
 Mým cílem zde není popisovat EA, ale spíše ukázat možnosti skriptování, které EA nabízí.
 
+Využití skriptování
+-----
+
+* Vytváření a úprava modelů
+* Vyhledávání v modelech
+* Import/Export dat z/do modelu
+
 Modely v EA můžete vytvářet ručně, můžete je generovat například ze zdrojových kódů nebo pomocí pluginu. Někdy ovšem potřebujete provést úpravy v projektech, které se jednoduše nedají dělat pomocí ručního zásahu, případně potřebujete naimportovat struktury, na které nelze využít standardní nástroje. V tomto případě vám může pomoci skriptování.
+
+Typy skriptů
+-----
 
 EA nabízí několik možností vytváření typů skriptů – podporuje VBScript, JScript nebo Javascript. Protože standardně moje pracovní stanice běží na linuxu (v korporátním prostředí je to občas problematické), začal jsem používat Javascript. Je to i z toho důvodu, že jsem si již několik aplikací napsal pomocí Javascript frameworků.
 Javascript, JScript a VBScript mají stejné možnosti využití API Enterprise Architectu. Nejvíce jsou zdokumentované skripty u JScript a VBScript. U Javascriptu je dokumentace méně, nicméně je možnost inspirovat se z těchto skriptů.
 
-![Scripting window](/public/scripting.png "Scripting window")
+![Scripting window](/public/ea/scripting.png "Scripting window")
 
 
 V případě, že otevřete portlet Scripting, zobrazí se vám základní nabídka skriptů, které je ideální na začátku si vyzkoušet. Skripty mohou běžet ve standartním režimu, případně je lze spouštět v Debug režimu.
+
+První skript v Javascriptu
+-----
+
+1. Otevřete Enterprise Architect a otevřete si Scripting Window
+
+2. Vytvořte si skupinu například `Test scripts`
+
+![Create group](/public/ea/group.png "Create group")
+
+3. Vytvořte si skript například `hello-world`
+
+![Create script](/public/ea/new-script.png "Create script")
+
+4. Do funkce main napište `Session.`. Uvidíte, že se vám objeví nápověda
+
+![Help](/public/ea/word-listen.png "Help")
+
+5. Dopište funkci Output s textem a spuťte.
+
+![Run](/public/ea/hello-world.png "Run")
+
 
 Několik doporučení
 -----
