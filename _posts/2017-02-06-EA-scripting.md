@@ -12,7 +12,7 @@ Enteprise Architect skriptování
 Dnes bych chtěl napsat pár řádků o Enterprise Architectu (Sparx Systems) a jeho možnostech skriptování. Tento nástroj je všude velmi rozšířený, protože umožnuje udržovat kompletní dokumentaci o vývoji.  Pro vytváření lze využít standardní UML diagramy, ale lze využít i jiné modely například pro business procesy  BPMN diagramy. V nových verzích EA je již integrována možnost vytvářet i grafické návrhy obrazovek, takže lze kompletní dokumentaci k projektu udržet na jednom místě.
 ![BPMN diagram](/public/ea/bpmn.png "BPMN diagram")
 
-To co se mí dále líbí je možnost ukládat projekty do databáze (Oracle, MySQL) a sdílet tak projekty napříč firmou bez nutnosti ukládání na sdílený disk. EA lze dnes provozovat jak na OS Windows, tak není problém podle návodu rozchodit EA i v Linuxu. V dnešní době mi nejvíce chybí absence generování automatické dokumentace z projektů, tak abych tuto činnost mohl dát na starost nějakému periodickému scheduleru. Z EA lze generovat HTML dokumentaci, ale absence automatizace je na škodu.
+To co se mí dále líbí je možnost ukládat projekty do databáze (Oracle, MySQL) a sdílet tak projekty napříč firmou bez nutnosti ukládání na sdílený disk. EA lze dnes provozovat jak na OS Windows, tak i na jiných platformách (Linux). V dnešní době mi nejvíce chybí automatické generování dokumentace z projektů, tak abych tuto činnost mohl dát na starost nějakému periodickému scheduleru. Z EA lze generovat HTML dokumentaci, ale absence automatizace je na škodu.
 
 ![EA13](/public/ea/ea.png "Enterprise Architect 13")
 
@@ -30,7 +30,7 @@ Modely v EA můžete vytvářet ručně, můžete je generovat například ze zd
 Typy skriptů
 -----
 
-EA nabízí několik možností vytváření typů skriptů – podporuje VBScript, JScript nebo Javascript. Protože standardně moje pracovní stanice běží na linuxu (v korporátním prostředí je to občas problematické), začal jsem používat Javascript. Je to i z toho důvodu, že jsem si již několik aplikací napsal pomocí Javascript frameworků.
+EA nabízí několik možností vytváření různých typů skriptů – podporuje VBScript, JScript nebo Javascript. Protože standardně moje pracovní stanice běží na linuxu (v korporátním prostředí je to občas problematické), začal jsem používat Javascript. Je to i z toho důvodu, že jsem si již několik aplikací napsal pomocí Javascript frameworků.
 Javascript, JScript a VBScript mají stejné možnosti využití API Enterprise Architectu. Nejvíce jsou zdokumentované skripty u JScript a VBScript. U Javascriptu je dokumentace méně, nicméně je možnost inspirovat se z těchto skriptů.
 
 ![Scripting window](/public/ea/scripting.png "Scripting window")
@@ -47,7 +47,7 @@ První skript v Javascriptu
 
    ![Create group](/public/ea/group.png "Create group")
 
-3. Vytvořte si skript například `hello-world`
+3. Vytvořte si například skript `hello-world`
 
    ![Create script](/public/ea/new-script.png "Create script")
 
@@ -72,8 +72,8 @@ Doporučuji skripty udržovat v nějakém verzovacím nástroji. Ideální je zn
 ````
 
 ### Nápověda při vytváření skriptů
-Lze využí oficiální dokumentaci Object modelu Enterprise Architectu. Nicméně tato dokumentace není úplně přehledná a spoustu informací zde není uvedeno, nebo není úplně jasné.
-Při vytváření skriptů je Enterprise architect schopný napovídat, v případě, že ví o jaký objekt se jedná. V případě že chcete vědět jaké funkce můžete zavolat na daném objektu, můžete provést následující operaci.
+Lze využí oficiální dokumentaci Object modelu Enterprise Architectu. Nicméně tato dokumentace není úplně přehledná a spousta informací zde není uvedeno, nebo není úplně jasná.
+Při vytváření skriptů je Enterprise architect schopný napovídat v případě, že ví o jaký objekt se jedná. V případě že chcete vědět jaké funkce můžete zavolat na daném objektu, můžete provést náslegdující operaci.
 
 ````javascript
 var currentModel as EA.Package
@@ -86,7 +86,7 @@ Poté se vám bude automaticky zobrazovat nápověda při zadání `currentModel
 
 
 ### Logování
-Při logování můžete využít `Session.Ouput`, který vypíše vstup na standartní vstup. Doporučují využívat přímo logování, které je v základní knihovně k dispozici v Enterprise Architectu. Ukázka použití logování je například v mé ukázce skriptu zde..
+Při logování můžete využít `Session.Ouput`, který vypíše vstup na standartní vstup. Doporučuji využívat přímo logování, které je v základní knihovně k dispozici v Enterprise Architectu. Ukázka použití logování je například v mé ukázce skriptu zde..
 
 ````javascript
 !INC Local Scripts.EAConstants-JScript
@@ -138,7 +138,7 @@ main()
 ````
 
 ### Automatický layout diagramu
-V případě, že generujete velké množství elementů do diagramu, případně více diagramů, můžete i tyto nad těmito diagramy layoutovat diagram.
+V případě že generujete velké množství elementů do diagramu nebo více diagramů, můžete pomocí skritpu zavolat operaci na automatické uspořádání elementů v diagramu. Elementy se poté v diagramu uspořádají podle zvoleného typu.
 
 ````javascript 
     !INC Local Scripts.EAConstants-JScript
@@ -151,7 +151,7 @@ V případě, že generujete velké množství elementů do diagramu, případn�
 ````
 
 ### Elektronická kniha
-Pro začátek doporučuji použít knihu od Thomas Kiliana „Scripting Enterprise Architect“. Jsou zde vysvětleny základní práce a různými objekty jako Element, Diagram, Connector, konfigurace atributů, vytváření package nebo modelů.
+Pro začátek doporučuji použít knihu od Thomas Kiliana „Scripting Enterprise Architect“. Jsou zde vysvětleny základní práce s různými objekty jako Element, Diagram, Connector, konfigurace atributů, vytváření package nebo modelů.
 
 ### Links
 
