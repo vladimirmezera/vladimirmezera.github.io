@@ -9,7 +9,7 @@ tags: [architecture, ea, enterprisearchitect]
 Enteprise Architect skriptování
 =====
 
-Dnes bych chtěl napsat pár řádků o Enterprise Architectu (Sparx Systems) a jeho možnostech skriptování. Tento nástroj je všude velmi rozšířený, protože umožnuje udržovat kompletní dokumentaci o vývoji.  Pro vytváření lze využít standardní UML diagramy, ale lze využít i jiné modely například pro business procesy  BPMN diagramy. V nových verzí EA je již integrována možnost vytvářet i grafické návrhy obrazovek, takže lze kompletní dokumentaci k projektu udržet na jednom místě.
+Dnes bych chtěl napsat pár řádků o Enterprise Architectu (Sparx Systems) a jeho možnostech skriptování. Tento nástroj je všude velmi rozšířený, protože umožnuje udržovat kompletní dokumentaci o vývoji.  Pro vytváření lze využít standardní UML diagramy, ale lze využít i jiné modely například pro business procesy  BPMN diagramy. V nových verzích EA je již integrována možnost vytvářet i grafické návrhy obrazovek, takže lze kompletní dokumentaci k projektu udržet na jednom místě.
 ![BPMN diagram](/public/ea/bpmn.png "BPMN diagram")
 
 To co se mí dále líbí je možnost ukládat projekty do databáze (Oracle, MySQL) a sdílet tak projekty napříč firmou bez nutnosti ukládání na sdílený disk. EA lze dnes provozovat jak na OS Windows, tak není problém podle návodu rozchodit EA i v Linuxu. V dnešní době mi nejvíce chybí absence generování automatické dokumentace z projektů, tak abych tuto činnost mohl dát na starost nějakému periodickému scheduleru. Z EA lze generovat HTML dokumentaci, ale absence automatizace je na škodu.
