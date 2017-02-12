@@ -1,7 +1,7 @@
 ---
 layout: page
 title: IT
-order: 3
+priority: 2 
 ---
 <ul>
 {% for post in site.categories.architecture %}
