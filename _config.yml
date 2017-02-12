@@ -18,6 +18,8 @@ author:
   url:            https://twitter.com/vladimirmezera
 
 paginate:         5
+google_analytics: UA-91828120-1
+
 
 # Custom vars
 version:          1.0.0.
