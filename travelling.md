@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Cestování
+priority: 4
 ---
 <ul>
 {% for post in site.categories[travelling] %}
