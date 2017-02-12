@@ -9,9 +9,9 @@ priority: 4
 
 Kontakt
 
-* [Email] (vladimir.mezera@gmail.com)
-* [LinkedIn] (https://www.linkedin.com/in/vladimirmezera)
-* [Twitter] (https://twitter.com/vladimirmezera)
+* [Email](vladimir.mezera@gmail.com)
+* [LinkedIn](https://www.linkedin.com/in/vladimirmezera)
+* [Twitter](https://twitter.com/vladimirmezera)
 
 
  
