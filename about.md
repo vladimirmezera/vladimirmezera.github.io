@@ -1,7 +1,7 @@
 ---
 layout: page
-title: O mě
-priority: 4
+title: O mně
+order: 4
 ---
 
 ![Run](/public/engeneer.jpg "Profilovka")
