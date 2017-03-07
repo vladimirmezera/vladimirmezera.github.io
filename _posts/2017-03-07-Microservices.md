@@ -16,4 +16,6 @@ Oba projekty přistupují k možnosti vytváření mikroslužeb obdobně (gener�
 Článek je k dispozici [zde](https://blog.akquinet.de/2017/01/12/the-lightweightness-of-microservices-comparing-spring-boot-wildly-swarm-and-haskell-snap/).
 
 * [Wildfly Swarm generátor](http://wildfly-swarm.io/generator/)
-* [Spring Boot generárot](http://start.spring.io/)
+* [Spring Boot generáror](http://start.spring.io/)
+* [Spring Boot](https://projects.spring.io/spring-boot/)
+* [Wildfly Swarm](http://wildfly-swarm.io/)
