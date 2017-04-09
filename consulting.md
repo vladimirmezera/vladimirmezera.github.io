@@ -29,6 +29,6 @@ Pracuji jako Red Hat instruktor pro následující technologii a kurzy.
 
 Mám také vlastní kurzy, které koncipuji na přání a požadavky zákazníka.
 
-* Vývoj nad CAMEL frameworkem
+* Vývoj nad Camel frameworkem
 * Systémová integrace s open source technologiemy (JBoss, SwitchYard, Camel, ActiveMQ)
 
