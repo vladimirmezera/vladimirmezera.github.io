@@ -80,7 +80,7 @@ Ukázka konfigurace pomocí Java DSL, kde každá třída musí dědit abstraktn
 
 ```java
 @Component
-public class RestRoute extends RouteBuilder {
+public class DummyRoute extends RouteBuilder {
     @Override
     public void configure() throws Exception {
 
@@ -92,8 +92,9 @@ public class RestRoute extends RouteBuilder {
     }
 }
 ```
-Tento příklad pouze vytváření jednoduchou routu, která pouze vrací zprávu s obsahem `Basic information`.
+Tento příklad pouze vytváření jednoduchou routu, která pouze vrací zprávu s obsahem `Basic information`. Route může být v aplikace více (preferuji rozdělení například podle komponent nebo integračních toků).
 
+Vlastní logiku v Camel routách ukážu někdy v dalších příspěvkách. 
 
 * [Ukázka příkladu integrace](https://github.com/vladimirmezera/camel-spring-boot)
 * [Camel projekt](http://camel.apache.org/)
