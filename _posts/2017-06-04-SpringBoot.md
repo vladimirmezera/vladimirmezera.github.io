@@ -35,26 +35,26 @@ Integrace se Spring Boot je jednoduchá. Stačí využít Spring Boot generátor
 
 V mé ukázce jsem nejdříve nakonfigurovat dependencyManagement, kde jsem nastavil dvě BOM závislosti. Jedna je pro Spring Boot a druhá pro integraci Spring Boot s Camel. 
 ```xml
-   <dependencyManagement>
-        <dependencies>
-            <!-- Spring Boot BOM -->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring.boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <!-- Camel BOM -->
-            <dependency>
-                <groupId>org.apache.camel</groupId>
-                <artifactId>camel-spring-boot-dependencies</artifactId>
-                <version>${camel.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+<dependencyManagement>
+   <dependencies>
+       <!-- Spring Boot BOM -->
+       <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-dependencies</artifactId>
+          <version>${spring.boot.version}</version>
+          <type>pom</type>
+          <scope>import</scope>
+       </dependency>
+       <!-- Camel BOM -->
+       <dependency>
+          <groupId>org.apache.camel</groupId>
+          <artifactId>camel-spring-boot-dependencies</artifactId>
+          <version>${camel.version}</version>
+          <type>pom</type>
+          <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
 ```
 
 Poté již je k dispozici většina knihoven potřebná pro sestavení aplikace a případný běh nebo testy. Camel má základní služby v modulu camel-core. Další adaptéry a komponenty jsou k dispozici v dalších podpůrných modulech např. komunikace se smtp nebo imap je v modulu camel-smtp. 
