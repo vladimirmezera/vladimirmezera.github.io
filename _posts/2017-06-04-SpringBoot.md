@@ -9,9 +9,10 @@ tags: [architecture, microservices, spring]
 # Spring boot integrace s projektem Camel
 
 Několik příspěvků zpětně jsem řešil jakou technologii zvolit (Wildfly Swarm vs Spring Boot). Nakonec zvítězila technologie Spring Boot a to zejména z těchto důvodů:
-•	Větší komunita uživatelů než u Wilfly Swarm
-•	Větší množství příkladů a testů
-•	Lepší a jednoduší integrace s Camel frameworkem
+
+* Větší komunita uživatelů než u Wilfly Swarm
+* Větší množství příkladů a testů
+* Lepší a jednoduší integrace s Camel frameworkem
 
 U projektů, které vyžadují komunikaci přes různé protokoly a v rámci logiky využívají integrační toky (přenos a transformace dat mezi různými body) využívam většinou framework Camel. 
 
@@ -73,6 +74,25 @@ Poté již je k dispozici většina knihoven potřebná pro sestavení aplikace 
 ```
 
 ## Vytváření integračních toků
+Vytváření integračních toků je již velice jednoduché. Konfigurací již Spring Boot aplikace při startu bude hledat Camel routy (bloky ve kterých se tyto integrační toky definují) a bude je na základě konfigurace spouštět. Aby Spring Boot aplikace veděla, kde tyto bloky hledat, stačí oanotovat třídy (pomocí anotace Component) ve kterých jsou tyto routy definované. 
+
+Ukázka konfigurace pomocí Java DSL, kde každá třída musí dědit abstraktní třídu RouteBuilder. V metodě `configure` je poté konfigurace samostatných route. Spring Boot umožnuje Camel routy také načítat pomocí Spring DSL (XML konfigurace).  
+
+```java
+@Component
+public class RestRoute extends RouteBuilder {
+    @Override
+    public void configure() throws Exception {
+
+        from("direct:getInfo").process(exchange -> {
+            exchange.getIn().setBody("Basic information");
+        });
+         
+
+    }
+}
+```
+Tento příklad pouze vytváření jednoduchou routu, která pouze vrací zprávu s obsahem `Basic information`.
 
 
 * [Ukázka příkladu integrace](https://github.com/vladimirmezera/camel-spring-boot)
