@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Spring boot integrace s projektem Camel"
+title:  "Spring Boot integrace s projektem Camel"
 date:   2017-06-04
 category: architecture
 tags: [architecture, microservices, spring]
@@ -73,7 +73,7 @@ Poté již je k dispozici většina knihoven potřebná pro sestavení aplikace 
 ```
 
 ## Vytváření integračních toků
-Vytváření integračních toků je již velice jednoduché. Konfigurací již Spring Boot aplikace při startu bude hledat Camel routy (bloky ve kterých se tyto integrační toky definují) a bude je na základě konfigurace spouštět. Aby Spring Boot aplikace veděla, kde tyto bloky hledat, stačí oanotovat třídy (pomocí anotace Component) ve kterých jsou tyto routy definované. 
+Vytváření integračních toků je již velice jednoduché. Konfigurací již Spring Boot aplikace při startu bude hledat Camel routy (bloky ve kterých se tyto integrační toky definují) a bude je na základě konfigurace spouštět. Aby Spring Boot aplikace veděla, kde tyto bloky hledat, stačí označit třídy (pomocí spring anotace Component) ve kterých jsou tyto routy definované. 
 
 Ukázka konfigurace pomocí Java DSL, kde každá třída musí dědit abstraktní třídu RouteBuilder. V metodě `configure` je poté konfigurace samostatných route. Spring Boot umožnuje Camel routy také načítat pomocí Spring DSL (XML konfigurace).  
 
