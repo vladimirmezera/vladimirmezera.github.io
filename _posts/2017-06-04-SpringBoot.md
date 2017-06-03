@@ -6,7 +6,6 @@ category: architecture
 tags: [architecture, microservices, spring]
 ---
 
-# Spring boot integrace s projektem Camel
 
 Několik příspěvků zpětně jsem řešil jakou technologii zvolit (Wildfly Swarm vs Spring Boot). Nakonec zvítězila technologie Spring Boot a to zejména z těchto důvodů:
 
