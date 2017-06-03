@@ -28,7 +28,7 @@ Camel je součástí dnes i open source integračních řešení jako Apache Ser
 * Předchozí zkušenosti s tímto frameworkem
 
 ## Integrace se Spring Boot
-Integrace se Spring Boot je jednoduchá. Stačí využít Spring Boot generátor, případně podle různých návodů nakonfigurovat například pom.xml.
+Integrace se Spring Boot je jednoduchá. Stačí využít Spring Boot generátor, případně podle různých návodů nakonfigurovat například `pom.xml` používáte-li maven na sestavení.
 
 ![Spring Boot generátor](/public/springboot/init.png "Spring Boot generátor")
 
@@ -93,9 +93,11 @@ public class DummyRoute extends RouteBuilder {
 ```
 Tento příklad pouze vytváření jednoduchou routu, která pouze vrací zprávu s obsahem `Basic information`. Route může být v aplikace více (preferuji rozdělení například podle komponent nebo integračních toků).
 
-Vlastní logiku v Camel routách ukážu někdy v dalších příspěvkách. 
+Vlastní logiku v Camel routách ukážu někdy v dalších příspěvkách.
 
-* [Ukázka příkladu integrace](https://github.com/vladimirmezera/camel-spring-boot)
+Kompletní ukázka integrace Spring Boot s Camel je [zde](https://github.com/vladimirmezera/camel-spring-boot).  
+
+* [Ukázka příkladu integrace Spring Boot s Camel](https://github.com/vladimirmezera/camel-spring-boot)
 * [Camel projekt](http://camel.apache.org/)
 * [Enterprise Integration Patterns](http://www.enterpriseintegrationpatterns.com/)
 * [Spring Boot generáror](http://start.spring.io/)
