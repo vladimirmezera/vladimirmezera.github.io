@@ -114,3 +114,4 @@ Nyní máme nainstalovaný subsystém Camel. Konfiguraci a vytváření toků (r
 * [Camel projekt](http://camel.apache.org/)
 * [Aplikační server Wildfly](http://wildfly.org)
 * [Camel subsystém do Wildlfy](https://github.com/wildfly-extras/wildfly-camel/releases) 
+* [EIP vzory](http://www.enterpriseintegrationpatterns.com/)
