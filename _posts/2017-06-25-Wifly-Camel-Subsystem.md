@@ -3,7 +3,7 @@ layout: post
 title:  "Camel subsystém ve Wildfly"
 date:   2017-06-25
 category: wildfly
-tags: [wildfly,camel, spring]
+tags: [architecture,wildfly,camel, spring]
 ---
 
 Camel subsystém ve Wildfly
@@ -66,7 +66,7 @@ $WILDFLY_HOME/bin/fuseconfig.sh --configs=camel --enable
 Spuštění aplikačního serveru můžete provést například pomocí příkazu.
 
 ```bash
-./standalone.sh -c standalone-camel.xml
+$WILDFLY_HOME/bin/standalone.sh -c standalone-camel.xml
 ```
 
 Tím se spustí aplikační server ve standalone módu. V konzoli po spuštění aplikačního serveru, případně logu (server.log v adresáří WILDFLY_HOME/standalone/log) by se měla objevit následující informace.
@@ -92,11 +92,12 @@ Aby bylo možné přistoupit do monitorovací konzole hawtio, která je součás
 ```bash
 sh WILDFLY_HOME/bin/add-user.sh -m -u test -p test1234# -s
 ```
+Tím se vytvoří `management` uživatel, kterým se lze přihlásit do hawtio konzole.
 
 Spuťte znovu aplikační server 
 
 ```bash
-./standalone.sh -c standalone-camel.xml
+$WILDFLY_HOME/bin/standalone.sh -c standalone-camel.xml
 ```
 
 A v prohlížeči zadejte url adresu `http://127.0.0.1:8080/hawtio/`. Měla by se objevit login stránka.
