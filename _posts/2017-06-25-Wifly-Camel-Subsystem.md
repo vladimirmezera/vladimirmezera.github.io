@@ -18,13 +18,13 @@ Máte aplikaci, které vyžaduje některé z těchto vlastností:
 
 * Komunikace se systémy, možnost efektivně reagovat na výpadky
 * Monitorování komunikace
-* Modulární koncepce aplikace, možnost měnit tj. měnit nebo upravit část aplikace bez výpadku ostatních částí
+* Modulární koncepce aplikace, možnost měnit nebo upravit část aplikace bez výpadku ostatních částí
 * Transformace, validace dat, throttling, load balancing v rámci komunikace
 * Využívaní integračních vzorů
 
 Pak Camel je integrační a mediační framework, který vám je schopen tyto vlastnosti splnit. 
 
-Camel lze použít i tak, že Camel knihovny přímo přidáte do aplikace (do war, ear apod), případně si vytvoříte vlastní modul do aplikačního serveru. 
+Camel lze použít i tak, že Camel knihovny přímo přidáte do aplikace (do war, ear apod), případně si vytvoříte vlastní modul do aplikačního serveru. Lepší řešení pro aplikační server Wildfly je využití subsystému Camel.
 
 Výhoda využití Camel subsystému:
 
