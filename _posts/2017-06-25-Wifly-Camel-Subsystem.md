@@ -24,7 +24,15 @@ Máte aplikaci, které vyžaduje některé z těchto vlastností:
 
 Pak Camel je integrační a mediační framework, který vám je schopen tyto vlastnosti splnit. 
 
-Camel lze použít i tak, že Camel knihovny přímo přidáte do aplikace (do war, ear apod), případně si vytvoříte vlastní modul do aplikačního serveru. Výhoda využití Camel subsystému je možnost použití již připravené konzole Hawtio, která je integrována v subsystému. Dále subsystém zjednodušuje nasazení jednotlivých konfigurací a inicializaci Camel contextu. Konfiguraci samotných toků si ukážeme někdy v dalším článku.
+Camel lze použít i tak, že Camel knihovny přímo přidáte do aplikace (do war, ear apod), případně si vytvoříte vlastní modul do aplikačního serveru. 
+
+Výhoda využití Camel subsystému:
+
+* Integrovaná managovací konzole [Hawtio](http://www.hawt.io)
+* Grafické zobrazení jednotlivých route a zobrazení vytížení 
+* Automatická incializace Camel při deployi aplikace
+* Ukázky kódu a aplikací, ze kterých lze při vývoji vycházet
+* Flexibilnější vývoj 
 
 Camel
 ----
