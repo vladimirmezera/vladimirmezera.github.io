@@ -2,8 +2,8 @@
 layout: post
 title:  "Camel subsystém ve Wildfly"
 date:   2017-06-25
-category: wildfly
-tags: [architecture,wildfly,camel, spring]
+category: architecture
+tags: [wildfly,camel, spring]
 ---
 
 Camel subsystém ve Wildfly
