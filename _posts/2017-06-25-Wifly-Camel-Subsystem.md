@@ -9,7 +9,7 @@ tags: [wildfly,camel, spring]
 Camel subsystém ve Wildfly
 ====
 
-Dnes napíšu jen o zajímavé možnosti spojení frameworku Camel s aplikačním serverem Wildfly.
+Dnes napíšu o zajímavé možnosti spojení frameworku Camel s aplikačním serverem Wildfly.
 
 Důvody využití
 ----
@@ -24,12 +24,12 @@ Máte aplikaci, které vyžaduje některé z těchto vlastností:
 
 Pak Camel je integrační a mediační framework, který vám je schopen tyto vlastnosti splnit. 
 
-Camel lze použít i tak, že CAMEL knihovny přímo přidáte do aplikací, případně si vytvoříte vlastní modul do aplikačního serveru. Výhoda využití Camel subsystému je možnost použití již připravené konzole Hawtio, která je integrována v subsystému. Dále subsystém zjednodušuje nasazení jednotlivých konfigurací a inicializaci Camel contextu. Konfiguraci samotných toků si ukážeme někdy v dalším článku.
+Camel lze použít i tak, že Camel knihovny přímo přidáte do aplikace (do war, ear apod), případně si vytvoříte vlastní modul do aplikačního serveru. Výhoda využití Camel subsystému je možnost použití již připravené konzole Hawtio, která je integrována v subsystému. Dále subsystém zjednodušuje nasazení jednotlivých konfigurací a inicializaci Camel contextu. Konfiguraci samotných toků si ukážeme někdy v dalším článku.
 
 Camel
 ----
 
-V jednom z předchozích článku jsem psal o integraci Camel frameworku s Spring Boot, které je ideální například na vytváření mikroslužeb. Camel je integrační framework, který velmi zjednodušuje integraci mezi aplikacemi. Obsahuje spoustu podpůrných komponent, kterými se lze napojit na různé systémy (messaging, SOAP/REST služby, databáze apod.). Tento framework lze efektivně napojit například do aplikačních serverů, ale lze jednoduše integrovat do jakékoliv jiné aplikace (malý počet závislostí, modulární architektura).  Výhoda tohoto projektu i velká členská základna, velký počet komponent, případně možnost rozšíření o vlastní komponentu. 
+V jednom z předchozích článku jsem psal o integraci [Camel frameworku s Spring Boot](https://vladimirmezera.github.io/architecture/2017/06/04/SpringBoot/), které je ideální například na vytváření mikroslužeb. Camel je integrační framework, který velmi zjednodušuje integraci mezi aplikacemi. Obsahuje spoustu podpůrných komponent, kterými se lze napojit na různé systémy (messaging, SOAP/REST služby, databáze apod.). Tento framework lze efektivně napojit například do aplikačních serverů, ale lze jednoduše integrovat do jakékoliv jiné aplikace (malý počet závislostí, modulární architektura).  Výhoda tohoto projektu i velká členská základna, velký počet komponent, případně možnost rozšíření o vlastní komponentu. 
 
 Wildfly
 ----
@@ -47,6 +47,8 @@ Proveďte instalaci
 [bash] unzip wildfly-dist-10.1.0.Final.zip
 [bash] tar xvzf wildfly-camel-patch-4.7.0.tar.gz -C wildfly-10.1.0.Final/
 ```
+
+V rámci čláku využívám proměnou WILDFLY\_HOME, která odkazuje na adresář `wildfly-10.1.0.Final`. Konfigurace je ukázána v shell terminálu, ale analogicky lze konfiguraci provést na jiných platformách.
 
 Subsystém se automaticky nainstaluje a vytvoří konfigurační soubory a moduly (knihovny v Camel).
 
@@ -78,11 +80,11 @@ Tím se spustí aplikační server ve standalone módu. V konzoli po spuštění
 A také naběhnutí monitorovací konzole hawtio.
 
 ```log
-21:02:28,249 INFO  [org.wildfly.extension.camel] (ServerService Thread Pool -- 75) Add Camel endpoint: http://127.0.0.1:8080/hawtio
+ [org.wildfly.extension.camel] (ServerService Thread Pool -- 75) Add Camel endpoint: http://127.0.0.1:8080/hawtio
 ```
 Nyní můžete přes příkaz CRTL+C aplikační server vypnout.
 
-Konfigurace subsystému CAMEL
+Konfigurace subsystému Camel
 ----
 
 Aby bylo možné přistoupit do monitorovací konzole hawtio, která je součástí CAMEL subsystému, je potřeba přidat uživatele. K tomu lze využít skript add-user.sh, který je součástí aplikačního serveru v adresáří `bin`.  
@@ -107,7 +109,7 @@ Přihlašte se pomocí uživatele `test` a hesla `test1234#`. Login by měl úsp
 
 
 
-Nyní máme nainstalovaný subsystém CAMEL. Konfiguraci a vytváření toků popíší v jednom z dalších článků.
+Nyní máme nainstalovaný subsystém Camel. Konfiguraci a vytváření toků (route) popíší v jednom z dalších článků.
 
 * [Camel projekt](http://camel.apache.org/)
 * [Aplikační server Wildfly](http://wildfly.org)
