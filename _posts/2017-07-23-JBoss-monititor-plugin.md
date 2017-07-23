@@ -39,7 +39,14 @@ V tomto případě může aplikační server pomocí domain controlleru (adresa 
 
 Na management rozhraní se lze přihlásit pomocí stejných údajů jako do administrátorské konzole (defaultní url admin. konzole je http://localhost:9990/console).
 
-## Další možná vylepšení
+## Monitorování 
+Sondu jsem otestoval pomocí nástroje Icinga2 (podporuje nagios pluginy), kde performance data ze sondy ukládám do InfluxDB a poté zobrazují pomocí nástroje Grafana.
+V tomto případě výstup může vypadat například takto:
+
+![Grafana JBoss plugin](/public/plugin/grafana.png "Grafana JBoss plugin")
+
+
+## Další vylepšení
 V rámci tohoto pluginu mě jich napadá velká část a postupně se k některým doufám dostanu:
 
 * Kontrola hodnot Domain a Host kontroleru
