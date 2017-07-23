@@ -13,6 +13,9 @@ description:      ''
 url:              http://vladimirmezera.github.com
 baseurl:          /
 
+site:
+  baseurl:        /      
+
 author:
   name:           'Vladimir Mezera'
   url:            https://twitter.com/vladimirmezera
