@@ -8,7 +8,7 @@ tags: [architecture, monitoring, icinga]
 
 # Monitorování aplikačních serverů
 
-Nedávno jsem řešil problém jak monitorovat aplikační servery (JBoss AS, WildFly, JBoss EAP) pomocí monitorovacích nástrojů z tzv. „Nagios rodiny“ (Nagios, Icinga2, Centreon). Aplikační servery sice podporují jmx, ale bohužel standartní jmx_plugin, který je součástí pluginů, které lze do monitorovacího nástroje instalovat nefunguje.  
+Nedávno jsem řešil problém jak monitorovat aplikační servery (JBoss AS, WildFly, JBoss EAP) pomocí monitorovacích nástrojů z tzv. „Nagios rodiny“ (Nagios, Icinga2, Centreon). Aplikační servery sice podporují jmx, ale bohužel standartní jmx\_plugin, který je součástí pluginů, které lze do monitorovacího nástroje instalovat nefunguje.  
 
 
 ## Design sondy
