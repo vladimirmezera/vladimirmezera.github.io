@@ -7,7 +7,6 @@ tags: [architecture, monitoring, icinga]
 ---
 
 # Monitorování aplikačních serverů
-
 Nedávno jsem řešil problém jak monitorovat aplikační servery (JBoss AS, WildFly, JBoss EAP) pomocí monitorovacích nástrojů z tzv. „Nagios rodiny“ (Nagios, Icinga2, Centreon). Aplikační servery sice podporují jmx, ale bohužel standartní jmx\_plugin, který je součástí rozšíření, které lze do monitorovacího nástroje instalovat nefunguje.  
 
 
@@ -43,7 +42,7 @@ Na management rozhraní se lze přihlásit pomocí stejných údajů jako do adm
 Sondu jsem otestoval pomocí nástroje Icinga2 (podporuje nagios pluginy), kde performance data ze sondy ukládám do InfluxDB a poté zobrazují pomocí nástroje Grafana.
 V tomto případě výstup může vypadat například takto:
 
-![Grafana JBoss plugin](/public/plugin/grafana.png "Grafana JBoss plugin")
+ ![Grafana JBoss plugin](/public/plugin/grafana.png "Grafana JBoss plugin")
 
 
 ## Další vylepšení
