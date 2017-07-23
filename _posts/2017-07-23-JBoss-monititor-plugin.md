@@ -57,6 +57,6 @@ V rámci tohoto pluginu mě jich napadá velká část a postupně se k někter�
 
 ## Odkazy 
 
+* [Odkaz na zdrojové kódy vytvořené sondy](https://github.com/vladimirmezera/icinga2-plugins/tree/master/wildfly-plugin)
 * [Icinga2](https://www.icinga.com)
 * [Nagios](https://www.nagios.org)
-* [Odkaz na vytvořenou sondu](https://github.com/vladimirmezera/icinga2-plugins/tree/master/wildfly-plugin)
